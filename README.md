@@ -82,3 +82,9 @@ EXEMPLOS DE PERGUNTAS E RESPOSTAS
 <img width="720" height="1381" alt="Screenshot_20260811-202958_Telegram" src="https://github.com/user-attachments/assets/67dbf7ad-8f69-4037-be2a-796980596a7f" />
 <img width="720" height="1378" alt="Screenshot_20260811-202946_Telegram" src="https://github.com/user-attachments/assets/e04245a7-d55e-4d62-8e29-0e98029e9bcf" />
 
+EXEMPLOS DO QUE NÃO PERGUNTAR
+
+- Nenhuma pergunta que não seja relacionada aos produtos, serviços, dados de contato, endereço e horário de funcionamento o pet shop PetLar.
+
+<img width="720" height="1384" alt="Screenshot_20260811-204714_Telegram" src="https://github.com/user-attachments/assets/23996018-b7c6-457b-bc20-7288557666c0" />
+
