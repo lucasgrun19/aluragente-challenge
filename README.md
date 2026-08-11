@@ -42,5 +42,29 @@ Volte ao BotFather e na mesma mensagem que ele te passa sua API para o N8N você
 No nó do telegram "send message" para o agente mandar mensagem, configurei arrastando a variável "chat id" arrastando do input do gatilho e depois o text é a variável do texto que o agente responde, voltei ao nó "send message" e lá apareceu a variável "output" que era a mensagem da IA e arrastei até text.
 Também notei que não tinha configurado o prompt dentro do Agente de IA para ele fazer seu papel encorporando o chatbot, fiz meu prompt no chatgpt para isso e troquei a parte de prompt para "define bellow", depois no campo de prompt abaixo arrastei a variável "text" que estava no input, também na parte options mais abaixo coloquei no "system message" que foi onde inseri o prompt para o agente incorporar um atendente no telegram, errei nessa parte e o meu agente antes não estava ativando o banco de dados do Supabase Vector Store para ler o pdf de pet shop e fazer o RAG. 
 
+
 APIs E CREDENCIAIS NECESSÁRIAS
 
+- Google Drive/Google cloud (serve para Google Drive, Google Sheets, Google Agenda, aplicações do Google).
+- Supabase Vector Store.
+- Telegram.
+- Mistral Cloud.
+
+
+STACK UTILIZADA
+
+- Claude Code para produzir o pdf fictício
+- Chatgpt para converter o pdf em markdown e para produzir o prompt do agente.
+- Google Drive para ser mais político quanto ao pdf e o processo e RAG.
+- Supabase como banco de dados.
+- Mistral cloud para embeddings, modelo de chat.
+- Default Data Loader para deixar o texto mais mastigado.
+- Extract from file para transformar o pdf em texto.
+- Telegram para ser o nosso chat e para fazer o bot com BothFather.
+
+
+COMO IMPORTAR O PROJETO PARA RODAR LOCAL OU CLOUD
+
+- Acesse seu n8n (local ou cloud)
+- Vá em Settings → Import from File (ou arraste o arquivo direto no editor)
+- Selecione o arquivo JSON com o workflow.
