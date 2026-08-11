@@ -68,3 +68,14 @@ COMO IMPORTAR O PROJETO PARA RODAR LOCAL OU CLOUD
 - Acesse seu n8n (local ou cloud)
 - Vá em Settings → Import from File (ou arraste o arquivo direto no editor)
 - Selecione o arquivo JSON com o workflow.
+
+
+
+EXEMPLOS DE PERGUNTAS E RESPOSTAS 
+
+- Pergunta: Quanto custa a areia para gatos ? Resposta: A areia higiênica está por R$ 30,00.
+- Pergunta: Vocês realizam atendimento de emergência ? Resposta: A PetLar não realiza atendimento de emergência ou plantão.
+- Pergunta: Também quero comprar coleira para gato. Resposta: A coleira está por R$20,00.
+
+  <img width="720" height="1381" alt="Screenshot_20260811-202810_Telegram" src="https://github.com/user-attachments/assets/8ac6b42e-c6ba-4d6b-b4fe-2dcd5138c7dd" />
+
