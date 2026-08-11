@@ -12,17 +12,13 @@ OBS: Uma das regras principais de negócio é não inventar informações, valor
 
 ARQUITETURA:
 
+.Resposta no Telegram:
+-Telegram Trigger → AI Agent → Send a text message.
+-AI Agente (nós): Mistral Cloud Chat Model → Simple Memory → Supabase Vector Store + Embeddings Mistral Cloud.
 
-Telegram Trigger → AI Agent → Send a text message (resposta no Telegram)
-                       │
-        ┌──────────────┼──────────────┐
-   Mistral Chat Model  Simple Memory   Supabase Vector Store + Embeddings Mistral cloud
-
-
-
-Google Drive trigger → Download File (Google Drive) → Extract from file → Supabase Vector Store (automação para inserir o pdf no supabase)
-                                                                              |                |
-                                                               Embeddings Mistral Cloud    Default Data Loader
+.Automação para o RAG no Supabase:
+-Google Drive trigger → Download File (Google Drive) → Extract from file → Supabase Vector Store.
+-Supabase Vector Store (nós): Embeddings Mistral Cloud + Default Data Loader.
 
 Utilizando o Supabase como Vector store (banco de dados) do agente.
 Supabase foi utilizado para inserir o documento para o agente IA utilizar na base de conhecimento dele. A IA consulta o documento e responde o usuário.
@@ -45,3 +41,6 @@ Conectando ao telegram, excluí o nó de gatilho e procurei pelo telegram no gat
 Volte ao BotFather e na mesma mensagem que ele te passa sua API para o N8N você vai ter o user do seu Bot para clicar nele e inicar com o comando /start, você também pode manda umas mensagens para ele para testar e confira no seu N8N se as mensagens estão aparecendo no nó de gatilho. O próximo passo foi voltar no meu nó agente de ia e terminar de configurar, em "source for prompt" troquei por "define bellow" e em "prompt" arrastei a variável "text" para o campo "prompt". Lembrando que essas variáveis apareceram porque eu iniciei o meu Bot e testei ele mandando mensagens.
 No nó do telegram "send message" para o agente mandar mensagem, configurei arrastando a variável "chat id" arrastando do input do gatilho e depois o text é a variável do texto que o agente responde, voltei ao nó "send message" e lá apareceu a variável "output" que era a mensagem da IA e arrastei até text.
 Também notei que não tinha configurado o prompt dentro do Agente de IA para ele fazer seu papel encorporando o chatbot, fiz meu prompt no chatgpt para isso e troquei a parte de prompt para "define bellow", depois no campo de prompt abaixo arrastei a variável "text" que estava no input, também na parte options mais abaixo coloquei no "system message" que foi onde inseri o prompt para o agente incorporar um atendente no telegram, errei nessa parte e o meu agente antes não estava ativando o banco de dados do Supabase Vector Store para ler o pdf de pet shop e fazer o RAG. 
+
+APIs E CREDENCIAIS NECESSÁRIAS
+
