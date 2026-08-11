@@ -1,4 +1,30 @@
-# aluragente-challenge
+# aluragente-challenge PetLar (@Petlarshop_bot)- Agente de IA chatbot de telegram para atendimento ao cliente via telegram
+O workflow foi criado no N8N com o intuito de simular atendimento ao cliente pelo telegram para um pet shop chamado PetLar. O nome do agente é PetLar user @Petlarshop_bot. Conforme a proposta do desafio utilizei um pdf com informações desse pet shop para que o agente consultasse o documento e fizesse o RAG para responder perguntas do usuário. Foi utilizado o Claude Code AI para criar esse documento fictício de um pet shop com informações fictícias para a resolução do desafio.
+
+O QUE O WORKFLOW FAZ:
+- Recebe mensagens de usuários no Telegram.
+- Processa a pergunta do usuário.
+- Mantém o histórico da conversa.
+- Consulta a base de conhecimento usando busca vetorial.
+- Consulta uma tabela do Supabase para verificar informações pela mensagem que o usuário (cliente) manda (endereço, horários de funcionamento e dias, produtos em estoque, telefone para contato, quais serviços oferece e etc).
+- Responde no Telegram após analisar a pergunta e devolve após a consulta desses dados.
+OBS: Uma das regras principais de negócio é não inventar informações, valores, endereço, nada que não esteja na base de dados, nada que não esteja no Prompt ou na tabela do Supabase. Além disso, nada de entregas em domicílio de produtos, nada de passar a chamada para um atendente, isso sai da proposta do desafio. O agente atende, ele conduz o atendimento e consulta o documento para passar essas informações para o cliente/pessoa usuária.
+
+ARQUITETURA:
+
+Telegram Trigger → AI Agent → Send a text message (resposta no Telegram)
+                       |
+                       |
+------|----------------|------------------------|--
+Mistral Cloud     Simple memory             Supabase Vector Store (tool RAG)
+Chat Model                                         |
+                                             Embeddings Mistral Cloud (embeddings)
+
+
+Google Drive trigger → Download File (Google Drive) → Extract from file → Supabase Vector Store (automação para inserir o pdf no supabase)
+                                                                              |                |
+                                                               Embeddings Mistral Cloud    Default Data Loader
+
 Utilizando o Supabase como Vector store (banco de dados) do agente.
 Supabase foi utilizado para inserir o documento para o agente IA utilizar na base de conhecimento dele. A IA consulta o documento e responde o usuário.
 Criar conta no Supabase (caso não tenha), criar uma tabela em "SQL Editor" e você vai precisar do código para criar a tabela que você consegue dentro do N8N procurando pelo nó do supabase vector store e na opção "add documents to vector store" selecione docs, vai te levar para uma página de instruções do supabase do N8N que você pode ler se for do seu interesse mas para especificamente pegar o código selecione "quickstart for setting up your vector store". É o primeiro código que aparece, você pode simplesmente copiar e colar o código no "SQL Editor" e selecionar o RUN para o código ser lido. Pode conferir a tabela criada em "Table editor" usando a barra lateral geralmente vem escrito "documents" que é o nome padrão.
