@@ -14,13 +14,9 @@ ARQUITETURA:
 
 
 Telegram Trigger → AI Agent → Send a text message (resposta no Telegram)
-                       |
-                       |
-------|----------------|------------------------|--
-Mistral Cloud     Simple memory             Supabase Vector Store (tool RAG)
-Chat Model                                         |
-                                             Embeddings Mistral Cloud (embeddings)
-
+                       │
+        ┌──────────────┼──────────────┐
+   Mistral Chat Model  Simple Memory   Supabase Vector Store + Embeddings Mistral cloud
 
 
 
