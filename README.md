@@ -12,6 +12,7 @@ OBS: Uma das regras principais de negócio é não inventar informações, valor
 
 ARQUITETURA:
 
+
 Telegram Trigger → AI Agent → Send a text message (resposta no Telegram)
                        |
                        |
@@ -19,6 +20,8 @@ Telegram Trigger → AI Agent → Send a text message (resposta no Telegram)
 Mistral Cloud     Simple memory             Supabase Vector Store (tool RAG)
 Chat Model                                         |
                                              Embeddings Mistral Cloud (embeddings)
+
+
 
 
 Google Drive trigger → Download File (Google Drive) → Extract from file → Supabase Vector Store (automação para inserir o pdf no supabase)
