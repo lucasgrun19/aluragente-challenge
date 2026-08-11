@@ -78,4 +78,7 @@ EXEMPLOS DE PERGUNTAS E RESPOSTAS
 - Pergunta: Também quero comprar coleira para gato. Resposta: A coleira está por R$20,00.
 
   <img width="720" height="1381" alt="Screenshot_20260811-202810_Telegram" src="https://github.com/user-attachments/assets/8ac6b42e-c6ba-4d6b-b4fe-2dcd5138c7dd" />
+<img width="720" height="1379" alt="Screenshot_20260811-203010_Telegram" src="https://github.com/user-attachments/assets/72c955b1-23a5-4821-a388-c629b7bb574e" />
+<img width="720" height="1381" alt="Screenshot_20260811-202958_Telegram" src="https://github.com/user-attachments/assets/67dbf7ad-8f69-4037-be2a-796980596a7f" />
+<img width="720" height="1378" alt="Screenshot_20260811-202946_Telegram" src="https://github.com/user-attachments/assets/e04245a7-d55e-4d62-8e29-0e98029e9bcf" />
 
