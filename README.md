@@ -100,4 +100,8 @@ LINK DO AGENTE FUNCIONANDO
 https://youtube.com/shorts/50bya_L2cug?is=jMPe09Jif6veMaac
 
 
+LINK DE DEPLOY
+
+https://ancientcricket-n8n.cloudfy.live/webhook/5622516a-a23d-4051-ae81-ffb836f6abd4/webhook
+
 
