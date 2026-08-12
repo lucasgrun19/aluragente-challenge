@@ -88,3 +88,10 @@ EXEMPLOS DO QUE NÃO PERGUNTAR
 
 <img width="720" height="1384" alt="Screenshot_20260811-204714_Telegram" src="https://github.com/user-attachments/assets/23996018-b7c6-457b-bc20-7288557666c0" />
 
+POR DENTRO DO WORKFLOW DO N8N
+
+
+<img width="1365" height="719" alt="Captura de tela 2026-08-12 155004" src="https://github.com/user-attachments/assets/ddcb0d2f-d43a-46f0-b413-6501f62b495c" />
+<img width="1365" height="606" alt="Captura de tela 2026-08-12 155123" src="https://github.com/user-attachments/assets/318877d4-e8be-4fa6-926f-ccfc66be04f1" />
+<img width="1344" height="686" alt="Captura de tela 2026-08-12 155410" src="https://github.com/user-attachments/assets/e66b1800-ee2a-40b2-a5ce-88f270426ccb" />
+
