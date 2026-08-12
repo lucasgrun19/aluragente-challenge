@@ -95,3 +95,9 @@ POR DENTRO DO WORKFLOW DO N8N
 <img width="1365" height="606" alt="Captura de tela 2026-08-12 155123" src="https://github.com/user-attachments/assets/318877d4-e8be-4fa6-926f-ccfc66be04f1" />
 <img width="1344" height="686" alt="Captura de tela 2026-08-12 155410" src="https://github.com/user-attachments/assets/e66b1800-ee2a-40b2-a5ce-88f270426ccb" />
 
+LINK DO AGENTE FUNCIONANDO
+
+https://youtube.com/shorts/50bya_L2cug?is=jMPe09Jif6veMaac
+
+
+
